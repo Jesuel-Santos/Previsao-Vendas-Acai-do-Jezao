@@ -1,10 +1,14 @@
 # Previsão de Vendas - Açaí do Jezão 🍦📊
 
-Bem-vindo ao repositório do projeto **Previsão de Vendas - Açaí do Jezão**, uma solução de Machine Learning desenvolvida para otimizar a produção de açaí e sorvete localizada na cidade de Serrolândia-Bahia. Este projeto adapta o desafio "Prevendo Vendas de Sorvete" da DIO, utilizando dados reais de vendas por dia da semana para prever a demanda e reduzir desperdícios enquanto maximiza lucros. 🚀
+Bem-vindo ao repositório do projeto **Previsão de Vendas - Açaí do Jezão**, uma solução de Machine Learning desenvolvida para otimizar a produção de açaí e sorvete localizada na 
+cidade de Serrolândia-Bahia. Este projeto adapta o desafio "Prevendo Vendas de Sorvete" da DIO, utilizando dados reais de vendas por dia da semana para prever a demanda e reduzir 
+desperdícios enquanto maximiza lucros. 🚀
 
 ## Descrição do Projeto
 
-Imagine que você é o proprietário do **Açaí do Jezao** e percebeu que as vendas variam bastante dependendo do dia da semana. Sem um planejamento adequado, posso produzir mais açaí e sorvete do que o necessário (gerando prejuízo) ou menos do que a demanda (perdendo vendas). Para resolver isso, desenvolvi um modelo preditivo com Machine Learning usando Python, scikit-learn e MLflow, rodando localmente no Jupyter Notebook.
+Imagine que você é o proprietário do **Açaí do Jezão** e percebeu que as vendas variam bastante dependendo do dia da semana. Sem um planejamento adequado, posso produzir mais açaí 
+e sorvete do que o necessário (gerando prejuízo) ou menos do que a demanda (perdendo vendas). Para resolver isso, desenvolvi um modelo preditivo com Machine Learning usando Python, 
+scikit-learn e MLflow, rodando localmente no Jupyter Notebook.
 
 ### Objetivo
 - **Treinar um modelo** de regressão para prever vendas de açaí com base no dia da semana.
@@ -15,8 +19,8 @@ Imagine que você é o proprietário do **Açaí do Jezao** e percebeu que as ve
 
 - **`inputs/`**: Contém o arquivo original de dados (`Vendas projeto no Azure.xlsx`) e um texto com a descrição inicial dos dados ("Dados de vendas reais da loja Açaí do Jezão.").
 - **`vendas_acai.csv`**: Dados processados e salvos como CSV para reprodutibilidade.
-- **`scripts/`**: Notebook Jupyter ou scripts Python (ex: `previsao_vendas.ipynb`) com o código completo.
-- **`outputs/`**: Gráficos gerados (ex: `vendas_por_dia.png`, `predicoes_vs_reais.png`) e modelo salvo (`modelo_acai.pkl`).
+- **`scripts/`**: Notebook Jupyter ou scripts Python (ex: `Vendas_Jezão.ipynb`) com o código completo.
+- **`outputs/`**: Gráficos gerados (ex: `Distribuição_de_vendas_gráficas.png`, `Predições_vs_vendas_reais.png`).
 - **`README.md`**: Este arquivo com a documentação.
 
 ## Processo de Desenvolvimento
@@ -27,7 +31,7 @@ Imagine que você é o proprietário do **Açaí do Jezao** e percebeu que as ve
 - Salvei como `vendas_acai.csv` para facilitar o uso futuro.
 
 ### 2. Análise Exploratória de Dados (EDA)
-- Gerei um boxplot de vendas por dia da semana (veja [vendas_por_dia.png](#)).
+- Gerei um boxplot de vendas por dia da semana (veja [Média de vendas por dia.png](#)).
   - **Insight**: Vendas são significativamente maiores nos fins de semana (Sábado e Domingo, média ~500-600) e menores em dias úteis (ex: Segunda ~80).
 - Identifiquei padrões sazonais que podem guiar a produção.
 
@@ -37,7 +41,7 @@ Imagine que você é o proprietário do **Açaí do Jezao** e percebeu que as ve
 
 ### 4. Treinamento e Avaliação
 - Treinei o modelo e avaliei com RMSE (~150) e R² (~0.5), indicando uma previsão razoável, mas com espaço para melhorias.
-- Criei um gráfico de predições vs vendas reais ([predicoes_vs_reais.png](#)) para visualizar a performance.
+- Criei um gráfico de predições vs vendas reais ([Predições vs vendas reais.png](#)) para visualizar a performance.
 
 ### 5. Registro com MLflow
 - Registrei o modelo como "modelo_acai" usando MLflow, logando métricas, parâmetros e artefatos.
@@ -54,6 +58,3 @@ Imagine que você é o proprietário do **Açaí do Jezao** e percebeu que as ve
 - **Reprodutibilidade**: Uso de MLflow para rastrear experimentos é essencial para projetos colaborativos.
 - **Escalabilidade**: Planejo migrar para Azure para pipelines mais robustos.
 - **Customização**: Adaptei o desafio de sorvetes para açaí, aplicando conceitos reais à minha loja.
-
-## Como Rodar o Projeto
-1. Clone o repositório:
